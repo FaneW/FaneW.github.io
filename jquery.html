@@ -21,8 +21,10 @@
 	
 		<script type="text/javascript">
 		
-			$.ajax("info.txt").done(function(data) {
+			$.ajax("info.text").done(function(data) {
 				alert(data);
+		}).fail(function() {
+			alert("Could not get data");
 		});
 		
 		</script>
